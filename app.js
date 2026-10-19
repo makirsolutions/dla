@@ -10,10 +10,10 @@ const SCORING = !!(window.DLA_CONFIG && window.DLA_CONFIG.scoring);
 const HAS_TTS = 'speechSynthesis' in window && !FAST;
 
 const SECTIONS = {
-  general:   { label: 'Genel sorular',  tag: 'Genel soru',        bank: D.general,   color: '#0e7c86', desc: 'Kişisel ve günlük konularda kısa sorular. Neden ve örnek vererek cevapla.' },
-  picture:   { label: 'Resim yorumlama', tag: 'Resim',            bank: D.pictures,  color: '#b9770e', desc: 'Resimde ne gördüğünü ve ne olduğunu anlat; tahmin yürüt.' },
-  scenario:  { label: 'Senaryolar',      tag: 'Senaryo',          bank: D.scenarios, color: '#8e3b5a', desc: 'Kabinde yaşanabilecek bir durumda ne yapar ve ne söylersin?' },
-  retelling: { label: 'Metni yeniden anlatma', tag: 'Yeniden anlatma', bank: D.retelling, color: '#3d5a80', desc: 'Kısa bir haber metnini oku, kendi cümlelerinle anlat.' },
+  general:   { label: 'Genel sorular',  tag: 'Genel soru',        bank: D.general,   color: '#984ae8', desc: 'Kişisel ve günlük konularda kısa sorular. Neden ve örnek vererek cevapla.' },
+  picture:   { label: 'Resim yorumlama', tag: 'Resim',            bank: D.pictures,  color: '#7a2fc9', desc: 'Resimde ne gördüğünü ve ne olduğunu anlat; tahmin yürüt.' },
+  scenario:  { label: 'Senaryolar',      tag: 'Senaryo',          bank: D.scenarios, color: '#6a28b0', desc: 'Kabinde yaşanabilecek bir durumda ne yapar ve ne söylersin?' },
+  retelling: { label: 'Metni yeniden anlatma', tag: 'Yeniden anlatma', bank: D.retelling, color: '#4f2087', desc: 'Kısa bir haber metnini oku, kendi cümlelerinle anlat.' },
 };
 const CRIT = { pronunciation: 'Telaffuz (tahmini)', structure: 'Dil bilgisi ve yapı', vocabulary: 'Kelime hazinesi', fluency: 'Akıcılık', production: 'Cevabın kapsamı' };
 const CHECKS = {
